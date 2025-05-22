@@ -13,3 +13,8 @@ type config struct {
 	port int
 	env string
 }
+
+type application struct {
+	config config
+	logger *slog.logger
+}
