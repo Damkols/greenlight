@@ -5,3 +5,5 @@
 - Created a config struct to hold port values and current environment value (development| staging| production).
 
 - Created an application struct that will hold all app dependencies, this will be useful for dependency injection.
+
+- Initialize an instance of config struct

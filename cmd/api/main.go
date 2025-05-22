@@ -18,3 +18,7 @@ type application struct {
 	config config
 	logger *slog.logger
 }
+
+func main{
+	var cfg config
+}
