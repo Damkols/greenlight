@@ -8,3 +8,8 @@ import(
 	"os"
 	"time"
 )
+
+type config struct {
+	port int
+	env string
+}
