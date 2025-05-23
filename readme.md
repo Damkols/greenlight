@@ -13,3 +13,5 @@
 - Setup a logger that writes to os.Stdout
 
 - Create an instance of application struct with logger and config values
+
+- mux(http.NewServeMux) returns a new ServeMux struct instance that maps route to a specific handler, HandleFunc registers the route.

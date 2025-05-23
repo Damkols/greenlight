@@ -32,4 +32,7 @@ func main{
 		config: cfg,
 		logger: logger
 	}
+
+	mux := http.NewServeMux()
+	mux.HandleFunc("/v1/healthcheck", app.healthcheckHandler)
 }
