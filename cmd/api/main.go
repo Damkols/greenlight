@@ -25,4 +25,6 @@ func main{
 	flag.IntVar(&cfg.port, "port", 4000, "API Port Server")
 	flag.StringVar(&cfg.env, "env", "developmemt", "development| staging | production")
 	flag.Parse()
+
+	logger := slog.New(slog.NewTextHandler(os.Stdout, nil))
 }

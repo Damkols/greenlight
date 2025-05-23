@@ -9,3 +9,5 @@
 - Initialize an instance of config struct
 
 - Using the flag import to set-up port and environment values, if no commandline values are provided for port and env, the values default to "4000" and "development" respectively. cmd flags(--port, --env)
+
+- Setup a logger that writes to os.Stdout
