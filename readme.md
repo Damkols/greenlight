@@ -19,3 +19,5 @@
 - Create an http Server that listens on the provided port uses the provided handler for routing, add sensible timeouts and writes any log messages to the structured logger at Error level.
 
 - Log starting server, port and env values to logger Info level
+
+- Start http server with ListenAndServe and log errors to logger Error level
