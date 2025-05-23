@@ -15,3 +15,5 @@
 - Create an instance of application struct with logger and config values
 
 - mux(http.NewServeMux) returns a new ServeMux struct instance that maps route to a specific handler, HandleFunc registers the route.
+
+- Create an http Server that listens on the provided port uses the provided handler for routing, add sensible timeouts and writes any log messages to the structured logger at Error level.
