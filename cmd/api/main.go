@@ -27,4 +27,9 @@ func main{
 	flag.Parse()
 
 	logger := slog.New(slog.NewTextHandler(os.Stdout, nil))
+
+	app := &application{
+		config: cfg,
+		logger: logger
+	}
 }
