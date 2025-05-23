@@ -44,4 +44,7 @@ func main{
 		WriteTimeout: 10 * time.Second,
 		ErrorLog: slog.NewLogLogger(logger.handler(), slog.LevelError)
 	}
+
+	logger.Info("starting server", "addr", srv.Addr, "env", cfg.env)
+
 }
