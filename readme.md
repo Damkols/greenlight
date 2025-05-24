@@ -35,3 +35,5 @@
 - Required imports to create a readIDParam helper
 
 - Created an helper function readIDParam that reads the ID of a wildcard segment
+
+- Used the helper function readIDParam to get ID of specific movies to show in showMovieHandler

@@ -16,5 +16,13 @@ func (app *application) createMovieHandler(w http.ResponseWriter, r *http.Reques
 }
 
 func (app *application) showMovieHandler(w http.ResponseWriter, r *http.Request) {
-fmt.Fprintln(w, "Show a specific movie here")
+	
+	id, err := app.readIDParam(r)
+
+	if err != nil {
+		http.NotFound(w, r)
+		return
+	}
+
+	fmt.Fprintf(w, "Display a specific movie %d\n", id)
 }
