@@ -25,3 +25,5 @@
 - Created Handlers file for all app handlers, a few package imports, send status, environment and version to the user.
 
 - Added httprouter third party package for proper route handling
+
+- Added a routes file, initialized a new route instance and registered /v1/healthcheck route, using httprouter package
