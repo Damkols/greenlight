@@ -9,6 +9,8 @@ import(
 	"time"
 )
 
+const version = "1.0.0"
+
 type config struct {
 	port int
 	env string
@@ -16,10 +18,10 @@ type config struct {
 
 type application struct {
 	config config
-	logger *slog.logger
+	logger *slog.Logger
 }
 
-func main{
+func main() {
 	var cfg config
 
 	flag.IntVar(&cfg.port, "port", 4000, "API Port Server")
@@ -30,19 +32,19 @@ func main{
 
 	app := &application{
 		config: cfg,
-		logger: logger
+		logger: logger,
 	}
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/v1/healthcheck", app.healthcheckHandler)
 
 	srv := &http.Server{
-		Addr: fmt.SprintF(":%d" cfg.port),
+		Addr: fmt.Sprintf(":%d", cfg.port),
 		Handler: mux,
 		IdleTimeout: time.Minute,
 		ReadTimeout: 5 * time.Second,
 		WriteTimeout: 10 * time.Second,
-		ErrorLog: slog.NewLogLogger(logger.handler(), slog.LevelError)
+		ErrorLog: slog.NewLogLogger(logger.Handler(), slog.LevelError),
 	}
 
 	logger.Info("starting server", "addr", srv.Addr, "env", cfg.env)
