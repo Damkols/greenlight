@@ -31,3 +31,5 @@
 - Created and registered createMovie route handler
 - Created and registered showMovie route handler
 - Created helpers go file
+
+- Required imports to create a readIDParam helper
