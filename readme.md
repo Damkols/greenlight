@@ -21,3 +21,5 @@
 - Log starting server, port and env values to logger Info level
 
 - Start http server with ListenAndServe and log errors to logger Error level
+
+- Created Handlers file for all app handlers, a few package imports, send status, environment and version to the user.
