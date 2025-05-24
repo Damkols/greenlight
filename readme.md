@@ -33,3 +33,5 @@
 - Created helpers go file
 
 - Required imports to create a readIDParam helper
+
+- Created an helper function readIDParam that reads the ID of a wildcard segment
