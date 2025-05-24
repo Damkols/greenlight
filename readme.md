@@ -29,3 +29,4 @@
 - Added a routes file, initialized a new route instance and registered /v1/healthcheck route, using httprouter package
 
 - Created and registered createMovie route handler
+- Created and registered showMovie route handler
