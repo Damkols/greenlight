@@ -26,10 +26,10 @@ func (app *application) writeJson(w http.ResponseWriter, status int, data any, h
 
 	js, err := json.Marshal(data)
 	if err != nil {
-		return error
+		return err
 	}
 
-	js = append(js, "\n")
+	js = append(js, '\n')
 
 	for key, value := range headers {
 		w.Header()[key] = value

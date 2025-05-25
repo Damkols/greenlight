@@ -39,3 +39,5 @@
 - Used the helper function readIDParam to get ID of specific movies to show in showMovieHandler
 
 - Created a writeJson helper function, to send response to users in json format.
+
+- Used writeJson helper to send healthcheck response to user
