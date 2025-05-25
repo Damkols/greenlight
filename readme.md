@@ -47,3 +47,5 @@
 - Created a data type struct Movie
 
 - Used writeJson helper to send a specific Movie json response to user
+
+- Using - (Hyphen) and omitzero directives, we use (-)directive to hide a field thats not relevant to the user e.g (CreatedAt) and omitzero to hide a field with a zero value e.g(Year)
