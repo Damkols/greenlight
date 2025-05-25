@@ -37,3 +37,5 @@
 - Created an helper function readIDParam that reads the ID of a wildcard segment
 
 - Used the helper function readIDParam to get ID of specific movies to show in showMovieHandler
+
+- Created a writeJson helper function, to send response to users in json format.
