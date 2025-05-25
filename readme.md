@@ -45,3 +45,5 @@
 - Created internal package to hold all custom data and logic for interacting with database
 
 - Created a data type struct Movie
+
+- Used writeJson helper to send a specific Movie json response to user
