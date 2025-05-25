@@ -41,3 +41,5 @@
 - Created a writeJson helper function, to send response to users in json format.
 
 - Used writeJson helper to send healthcheck response to user
+
+- Created internal package to hold all custom data and logic for interacting with database
