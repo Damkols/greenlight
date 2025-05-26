@@ -24,3 +24,11 @@ func (app *application) errorResponse(w http.ResponseWriter, r *http.Request, st
 		w.WriteHeader(500)
 	}
 }
+
+
+func (app *application) serverErrorResponse(w http.Request, r *http.Request, err Error) {
+	app.logError(r, err)
+
+	message := "The server encountered a problem and could not process yuor request"
+	app.errorResponse(w, r, http.StatusNotFound, message)
+}

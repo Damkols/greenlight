@@ -58,3 +58,4 @@
 
 - Created a logError helper method
 - Created errorResponse helper method
+- Created serverErrorResponse helper method
