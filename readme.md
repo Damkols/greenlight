@@ -63,3 +63,4 @@
 - Created methodNotAllowedResponse helper method
 
 - Use error helper method in healthcheckHandler
+- Use error helper method in showMovieHandler
