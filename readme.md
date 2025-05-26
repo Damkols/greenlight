@@ -53,3 +53,5 @@
 -Using omitempty and string directives
 
 - Used json.MarshalIndent to format json responses
+
+- Envelope Json responses using map
