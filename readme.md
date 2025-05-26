@@ -60,3 +60,4 @@
 - Created errorResponse helper method
 - Created serverErrorResponse helper method
 - Created notFoundResponse helper method
+- Created methodNotAllowedResponse helper method
