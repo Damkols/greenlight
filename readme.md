@@ -57,3 +57,4 @@
 - Envelope Json responses using map
 
 - Created a logError helper method
+- Created errorResponse helper method
