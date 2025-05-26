@@ -55,3 +55,5 @@
 - Used json.MarshalIndent to format json responses
 
 - Envelope Json responses using map
+
+- Created a logError helper method
