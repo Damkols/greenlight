@@ -61,3 +61,5 @@
 - Created serverErrorResponse helper method
 - Created notFoundResponse helper method
 - Created methodNotAllowedResponse helper method
+
+- Use error helper method in healthcheckHandler
