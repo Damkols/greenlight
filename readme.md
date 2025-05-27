@@ -65,3 +65,5 @@
 - Use error helper method in healthcheckHandler
 - Use error helper method in showMovieHandler
 - Use error helpers in routes
+
+-Setup a recoverPanic middleware
