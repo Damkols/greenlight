@@ -67,3 +67,4 @@
 - Use error helpers in routes
 
 -Setup a recoverPanic middleware
+- Warp router with panic recover middleware
