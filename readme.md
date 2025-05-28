@@ -68,3 +68,4 @@
 
 -Setup a recoverPanic middleware
 - Warp router with panic recover middleware
+- Added a createMovie Handler function and route

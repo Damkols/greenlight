@@ -3,6 +3,8 @@ package main
 import(
 	"net/http"
 	"time"
+	"fmt"
+	"encoding/json"
 	"greenlight.damkols.net/internal/data"
 )
 
@@ -28,4 +30,9 @@ func (app *application) showMovieHandler(w http.ResponseWriter, r *http.Request)
 		app.serverErrorResponse(w, r, err)
 	}
 
+}
+
+
+func (app *application) createMovieHandler(w http.ResponseWriter, r *http.Request) {
+	
 }
