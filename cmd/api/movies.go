@@ -46,4 +46,6 @@ func (app *application) createMovieHandler(w http.ResponseWriter, r *http.Reques
 		app.errorResponse(w, r, http.StatusBadRequest, err.Error())
 		return
 	}
+
+	fmt.Fprintf(w, "%+v\n", input)
 }
