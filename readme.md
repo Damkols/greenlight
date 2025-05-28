@@ -71,3 +71,4 @@
 
 - Added a createMovie Handler function and route
 - Declare an anonymous struct to hold info from the user
+- Decode request body content into input struct

@@ -40,4 +40,10 @@ func (app *application) createMovieHandler(w http.ResponseWriter, r *http.Reques
 		Runtime int32 `json:"runtime"`
 		Genres []string `json:"genres"`
 	}
+
+	err := json.NewDecoder(r.Body).Decode(&input)
+	if err != nil {
+		app.errorResponse(w, r, http.StatusBadRequest, err.Error())
+		return
+	}
 }
