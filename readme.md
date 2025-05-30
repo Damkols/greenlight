@@ -78,3 +78,4 @@
 - Use the errors.As() funtion to check whether error has type of *json.SyntaxError
 - Check for more errors with errors.Is
 - Catch any *json.UnmarshalTypeError errors
+- Catch more errors and return error messages
