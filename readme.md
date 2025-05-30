@@ -75,3 +75,4 @@
 - Send contents of input struct as HTTP response
 - readJson helper func
 - If there is an error during decoding, start the triage
+- Use the errors.As() funtion to check whether error has type of *json.SyntaxError
