@@ -74,3 +74,4 @@
 - Decode request body content into input struct
 - Send contents of input struct as HTTP response
 - readJson helper func
+- If there is an error during decoding, start the triage
