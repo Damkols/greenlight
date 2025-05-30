@@ -82,3 +82,4 @@
 - Use readJson helper
 - Created badRequestResponse errors func
 - Use badRequestResponse in createMovieHandler
+- Use http.MaxBytesReader to limit size of request body to 1mb
