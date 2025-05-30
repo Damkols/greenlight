@@ -81,3 +81,4 @@
 - Catch more errors and return error messages
 - Use readJson helper
 - Created badRequestResponse errors func
+- Use badRequestResponse in createMovieHandler
