@@ -84,3 +84,5 @@
 - Use badRequestResponse in createMovieHandler
 - Use http.MaxBytesReader to limit size of request body to 1mb
 - Call DisallowUnknownFields on json decoder
+- Create a maxBytesError Variable
+- Added more error switch cases to readJson helper
