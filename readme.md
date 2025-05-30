@@ -86,3 +86,4 @@
 - Call DisallowUnknownFields on json decoder
 - Create a maxBytesError Variable
 - Added more error switch cases to readJson helper
+- Call Decode on an empty anonymous struct as the destination and check for more errors
