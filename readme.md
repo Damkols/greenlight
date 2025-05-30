@@ -73,3 +73,4 @@
 - Declare an anonymous struct to hold info from the user
 - Decode request body content into input struct
 - Send contents of input struct as HTTP response
+- readJson helper func

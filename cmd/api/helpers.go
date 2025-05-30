@@ -5,6 +5,8 @@ import(
 	"net/http"
 	"strconv"
 	"encoding/json"
+	"fmt"
+	"io"
 
 	"github.com/julienschmidt/httprouter"
 )
@@ -42,4 +44,8 @@ func (app *application) writeJson(w http.ResponseWriter, status int, data envelo
 	w.Write(js)
 
 	return nil
+}
+
+func (app *application) readJSON(w http.ResponseWriter, r *http.Request, dst any) error {
+	
 }
