@@ -59,7 +59,7 @@ func (app *application) readJSON(w http.ResponseWriter, r *http.Request, dst any
 		
 		case errors.Is(err, io.ErrUnexpectedEOF):
 			return errors.New("body contains badly-formed JSON")
-		}
+		
 
 		case errors.As(err, &unmarshalTypeError):
 			if unmarshalTypeError.Field != "" {
@@ -76,4 +76,6 @@ func (app *application) readJSON(w http.ResponseWriter, r *http.Request, dst any
 		default:
 			return err
 	}
+}
+return nil
 }
