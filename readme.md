@@ -93,3 +93,4 @@
 - Validators struct type with Errors field map
 - func New returns a pointer to Validators struct instance with empty Errors map
 - func Valid returns true if errors map contains no entry
+- func AddError adds error message to the map
