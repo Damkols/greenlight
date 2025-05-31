@@ -91,3 +91,4 @@
 
 - Regexp and slices import in validators package.
 - Validators struct type with Errors field map
+- func returns a pointer to Errors map instance
