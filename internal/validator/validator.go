@@ -5,3 +5,6 @@ import (
 	"slices"
 )
 
+type Validators struct {
+	Errors map[string]string
+}

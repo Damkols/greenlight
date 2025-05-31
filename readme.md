@@ -90,3 +90,4 @@
 - Create and use Runtime type
 
 - Regexp and slices import in validators package.
+- Validators struct type with Errors field map
