@@ -91,4 +91,5 @@
 
 - Regexp and slices import in validators package.
 - Validators struct type with Errors field map
-- func returns a pointer to Errors map instance
+- func New returns a pointer to Validators struct instance with empty Errors map
+- func Valid returns true if errors map contains no entry
