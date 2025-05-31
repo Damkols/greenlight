@@ -88,3 +88,5 @@
 - Added more error switch cases to readJson helper
 - Call Decode on an empty anonymous struct as the destination and check for more errors
 - Create and use Runtime type
+
+- Regexp and slices import in validators package.
