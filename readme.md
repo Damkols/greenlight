@@ -94,3 +94,4 @@
 - func New returns a pointer to Validators struct instance with empty Errors map
 - func Valid returns true if errors map contains no entry
 - func AddError adds error message to the map
+- func Check adds an error message to the map only if validation check is not ok
