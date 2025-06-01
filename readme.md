@@ -97,3 +97,4 @@
 - func Check adds an error message to the map only if validation check is not ok
 - func returns true if a specific value is in a list of permitted values
 - func Matches returns true if a string value matches a specific regexp pattern
+- func returns if all values in a slice are unique
