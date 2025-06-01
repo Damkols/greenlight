@@ -28,3 +28,7 @@ func (v *Validator) Check(ok bool, key, message string) {
 		v.AddError(key, message)
 	}
 }
+
+func PermittedValue[T comparable](value T, permittedValues ...T) bool {
+	return slices.Contains(permittedValues, value)
+}
