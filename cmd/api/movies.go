@@ -56,5 +56,9 @@ func (app *application) createMovieHandler(w http.ResponseWriter, r *http.Reques
 	v.Check(input.Year >= 1888, "year", "must be greater than 1888")
 	v.Check(input.Year <= int32(time.Now().Year()), "year", "must not be in the future")
 
+	v.Check(input.Runtime != 0, "runtime", "must be provided")
+	v.Check(input.Runtime > 0, "runtime", "must be a positive integer")
+	
+
 	fmt.Fprintf(w, "%+v\n", input)
 }

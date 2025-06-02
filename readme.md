@@ -104,3 +104,4 @@
 - Initialize a new Validator instance
 - Use Check() method to execute validation checks on user title input
 - Use Check() method to execute validation checks on user year input
+- Use Check() method to execute validation checks on user runtime input
