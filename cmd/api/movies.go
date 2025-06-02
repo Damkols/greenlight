@@ -63,6 +63,7 @@ func (app *application) createMovieHandler(w http.ResponseWriter, r *http.Reques
 	v.Check(len(input.Genres) >= 1, "genres", "must contain at least 1 genre")
 	v.Check(len(input.Genres) <= 5, "genres", "must not contain more than 5 genres")
 
+	v.Check(validator.Unique(input.Genres), "genres", "must not contain duplicate values")
 
 	fmt.Fprintf(w, "%+v\n", input)
 }
