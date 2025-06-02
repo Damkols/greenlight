@@ -5,6 +5,7 @@ import(
 	"time"
 	"fmt"
 	"greenlight.damkols.net/internal/data"
+	"greenlight.damkols.net/internal/validator"
 )
 
 func (app *application) showMovieHandler(w http.ResponseWriter, r *http.Request) {
@@ -45,6 +46,8 @@ func (app *application) createMovieHandler(w http.ResponseWriter, r *http.Reques
 		app.badRequestResponse(w, r, err)
 		return
 	}
+
+	v := validator.New()
 
 	fmt.Fprintf(w, "%+v\n", input)
 }

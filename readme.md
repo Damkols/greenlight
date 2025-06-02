@@ -100,3 +100,5 @@
 - func returns if all values in a slice are unique
 - Declare regexp for sanity checking
 - func failedValidationResponse error helper
+
+- Initialize a new Validator instance
