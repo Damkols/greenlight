@@ -99,3 +99,4 @@
 - func Matches returns true if a string value matches a specific regexp pattern
 - func returns if all values in a slice are unique
 - Declare regexp for sanity checking
+- func failedValidationResponse error helper
