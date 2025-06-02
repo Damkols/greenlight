@@ -106,3 +106,4 @@
 - Use Check() method to execute validation checks on user year input
 - Use Check() method to execute validation checks on user runtime input
 - Use Check() method to execute validation checks on user genres input
+- Use Valid() method to see if any of the checks failed
