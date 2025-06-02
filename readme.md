@@ -102,3 +102,4 @@
 - func failedValidationResponse error helper
 
 - Initialize a new Validator instance
+- Use Check() method to execute validation checks on user title input
