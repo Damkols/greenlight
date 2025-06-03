@@ -2,6 +2,7 @@ package data
 
 import(
 	"time"
+	"greenlight.damkols.net/internal/validator"
 )
 
 type Movie struct {
@@ -9,7 +10,7 @@ type Movie struct {
 	CreatedAt time.Time `json:"-"`
 	Title string `json:"title"`
 	Year int32 `json:"year,omitzero"`
-	Runtime int32 `json:"runtime,omitzero,string"`
+	Runtime Runtime `json:"runtime,omitzero,string"`
 	Genres []string `json:"genres,omitempty"`
 	Version int32 `json:"version"`
 }
