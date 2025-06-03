@@ -107,3 +107,4 @@
 - Use Check() method to execute validation checks on user runtime input
 - Use Check() method to execute validation checks on user genres input
 - Use Valid() method to see if any of the checks failed
+- Create ValidateMovie function and add all validation checks in the function
