@@ -109,3 +109,4 @@
 - Use Valid() method to see if any of the checks failed
 - Create ValidateMovie function and add all validation checks in the function
 - Copy values from input struct to a new movie struct
+- Call ValidateMovie func
