@@ -2,7 +2,6 @@ package data
 
 import(
 	"errors"
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -12,7 +11,7 @@ var ErrInvalidRuntimeFormat = errors.New("invalid runtime format")
 type Runtime int32
 
 func (r *Runtime) UnmarshalJson(jsonValue []byte) error {
-	unquotedJSONValue, err := strconv.Unqoute(string(jsonValue))
+	unquotedJSONValue, err := strconv.Unquote(string(jsonValue))	
 	if err != nil {
 		return ErrInvalidRuntimeFormat
 	}
