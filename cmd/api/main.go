@@ -7,6 +7,9 @@ import(
 	"net/http"
 	"os"
 	"time"
+	"context"
+	"database/sql"
+	_"github.com/lib/pq"
 )
 
 const version = "1.0.0"
@@ -14,6 +17,9 @@ const version = "1.0.0"
 type config struct {
 	port int
 	env string
+	db struct {
+		dsn string
+	}
 }
 
 type application struct {

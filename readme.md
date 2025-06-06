@@ -111,3 +111,4 @@
 - Copy values from input struct to a new movie struct
 - Call ValidateMovie func
 - Database imports
+- Add a Db struct to config struct
