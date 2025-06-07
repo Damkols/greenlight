@@ -117,3 +117,4 @@
 - Call OpenDB helper function
 - Check for errors and log errors
 - Defer call to db.Close
+- Log a meesage to say connection pool has been succesfully established
