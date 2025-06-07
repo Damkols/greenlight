@@ -116,3 +116,4 @@
 - Read DSN value from the db-dsn command-line flag
 - Call OpenDB helper function
 - Check for errors and log errors
+- Defer call to db.Close

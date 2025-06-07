@@ -43,6 +43,8 @@ func main() {
 		os.Exit(1)
 	}
 
+	defer db.Close()
+
 	app := &application{
 		config: cfg,
 		logger: logger,
