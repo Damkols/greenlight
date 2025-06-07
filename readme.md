@@ -112,3 +112,6 @@
 - Call ValidateMovie func
 - Database imports
 - Add a Db struct to config struct
+
+- Read DSN value from the db-dsn command-line flag
+- Call OpenDB helper function

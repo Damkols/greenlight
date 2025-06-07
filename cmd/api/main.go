@@ -37,6 +37,8 @@ func main() {
 
 	logger := slog.New(slog.NewTextHandler(os.Stdout, nil))
 
+	db, err := openDB(cfg)
+
 	app := &application{
 		config: cfg,
 		logger: logger,
