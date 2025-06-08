@@ -120,3 +120,4 @@
 - Log a meesage to say connection pool has been succesfully established
 
 - Create openDB func which returns sql.DB connection pool
+- Use sql.Open to create an empty connection pool
