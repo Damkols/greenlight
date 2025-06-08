@@ -121,3 +121,4 @@
 
 - Create openDB func which returns sql.DB connection pool
 - Use sql.Open to create an empty connection pool
+- Create a context with 5 second timeout
