@@ -83,5 +83,6 @@ func openDB(cfg config) (*sql.DB, error) {
 		db.Close()
 		return nil, err
 	}
-	
+
+	return db, nil
 }
