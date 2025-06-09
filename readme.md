@@ -123,3 +123,4 @@
 - Use sql.Open to create an empty connection pool
 - Create a context with 5 second timeout
 - Use PingContext() to establish a new connection to the database, passing in the context we created above.
+- Use value of env
