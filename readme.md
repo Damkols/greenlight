@@ -125,3 +125,4 @@
 - Use PingContext() to establish a new connection to the database, passing in the context we created above.
 - Use value of env
 - maxOpenConns, maxIdleConns, maxIdleTime fields for connection pool config
+- Read connection pool settings from cmd flags into config struct
