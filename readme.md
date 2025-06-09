@@ -124,3 +124,4 @@
 - Create a context with 5 second timeout
 - Use PingContext() to establish a new connection to the database, passing in the context we created above.
 - Use value of env
+- maxOpenConns, maxIdleConns, maxIdleTime fields for connection pool config

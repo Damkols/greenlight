@@ -19,6 +19,9 @@ type config struct {
 	env string
 	db struct {
 		dsn string
+		maxOpenConns int
+		maxIdleConns int
+		maxIdleTime int
 	}
 }
 
