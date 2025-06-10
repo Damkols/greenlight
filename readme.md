@@ -127,3 +127,4 @@
 - maxOpenConns, maxIdleConns, maxIdleTime fields for connection pool config
 - Read connection pool settings from cmd flags into config struct
 - Set maximum number of open connections in the pool
+- Set maximum number of idle connections in the pool
