@@ -132,3 +132,4 @@
 
 - Generated a pair of migrations file
 - Add movies PostgreSQL field and data types to up migrations table
+- Add DROP TABLE to down migrations (to reverse up migrations)
