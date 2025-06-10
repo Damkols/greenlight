@@ -129,3 +129,5 @@
 - Set maximum number of open connections in the pool
 - Set maximum number of idle connections in the pool
 - Set maximum idle timeout for connections in the pool
+
+- Generated a pair of migrations file
