@@ -128,3 +128,4 @@
 - Read connection pool settings from cmd flags into config struct
 - Set maximum number of open connections in the pool
 - Set maximum number of idle connections in the pool
+- Set maximum idle timeout for connections in the pool
