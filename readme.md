@@ -136,3 +136,4 @@
 
 - Create second pair of migrations file
 - Add CHECK constraints to up migrations
+- Drop Check constraints to Down migrations
