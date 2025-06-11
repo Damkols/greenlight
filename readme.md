@@ -1,4 +1,4 @@
-## This file will detail the way this API code is being written.
+## This file details the structure and approach to writing the API.
 
 - Imported some packages such as flag, fmt, log/slog, net/http, os, time that will be needed as i proceed with the build
 
@@ -133,3 +133,5 @@
 - Generated a pair of migrations file
 - Add movies PostgreSQL field and data types to up migrations table
 - Add DROP TABLE to down migrations (to reverse up migrations)
+
+- Create second pair of migrations file
