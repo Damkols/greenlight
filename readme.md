@@ -135,3 +135,4 @@
 - Add DROP TABLE to down migrations (to reverse up migrations)
 
 - Create second pair of migrations file
+- Add CHECK constraints to up migrations
