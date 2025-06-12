@@ -142,3 +142,4 @@
 - Placeholder method of type MovieModel for inserting a new record in the movies table
 - Placeholder method of type MovieModel for fetching a specific record from the movies table
 - Placeholder method of type MovieModel for updating a specific record from the movies table
+- Placeholder method of type MovieModel for deleting a specific record from the movies table
