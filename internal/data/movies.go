@@ -10,6 +10,10 @@ type MovieModel struct {
 	DB *sql.DB
 }
 
+func (m MovieModel) Insert(movie *Movie) error {
+	return nil
+}
+
 type Movie struct {
 	ID int64 `json:"id"`
 	CreatedAt time.Time `json:"-"`

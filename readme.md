@@ -139,3 +139,4 @@
 - Drop Check constraints to Down migrations
 
 - Defined a MovieModel struct which wraps sql.DB connection pool
+- Placeholder method of type MovieModel for inserting a new record in the movies table
