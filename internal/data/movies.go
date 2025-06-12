@@ -14,7 +14,11 @@ func (m MovieModel) Insert(movie *Movie) error {
 	return nil
 }
 
-func (m MovieModel) Insert(id int64) (*Movie, error) {
+func (m MovieModel) Get(id int64) (*Movie, error) {
+	return nil
+}
+
+func (m MovieModel) Update(movie *Movie) error {
 	return nil
 }
 
