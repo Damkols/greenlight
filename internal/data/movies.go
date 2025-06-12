@@ -6,6 +6,10 @@ import(
 	"greenlight.damkols.net/internal/validator"
 )
 
+type MovieModel struct {
+	DB *sql.DB
+}
+
 type Movie struct {
 	ID int64 `json:"id"`
 	CreatedAt time.Time `json:"-"`
