@@ -140,3 +140,4 @@
 
 - Defined a MovieModel struct which wraps sql.DB connection pool
 - Placeholder method of type MovieModel for inserting a new record in the movies table
+- Placeholder method of type MovieModel for fetching a specific record from the movies table

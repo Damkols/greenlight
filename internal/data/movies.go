@@ -14,6 +14,10 @@ func (m MovieModel) Insert(movie *Movie) error {
 	return nil
 }
 
+func (m MovieModel) Insert(id int64) (*Movie, error) {
+	return nil
+}
+
 type Movie struct {
 	ID int64 `json:"id"`
 	CreatedAt time.Time `json:"-"`
