@@ -145,3 +145,4 @@
 - Placeholder method of type MovieModel for deleting a specific record from the movies table
 
 - Create Models data file and declare a Models struct to hold MovieModel
+- NewModels func returns Models struct with initialized MovieModel struct

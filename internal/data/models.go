@@ -13,3 +13,9 @@ var (
 type Models struct {
 	Movies MovieModel
 }
+
+func NewModels(db *sql.Db) Models {
+	return Models{
+		Movies: MovieModel{DB: db}
+	}
+}
