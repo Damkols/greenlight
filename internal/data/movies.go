@@ -16,6 +16,8 @@ func (m MovieModel) Insert(movie *Movie) error {
 	VALUES ($1, $2, $3, $4)
 	RETURNING id, created_at, version
 	`
+
+	args := []any{movie.Title, movie.Year, movie.Runtime, pq.Array(movie.Genres)}
 	return nil
 }
 
