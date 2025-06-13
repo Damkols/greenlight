@@ -146,3 +146,4 @@
 
 - Create Models data file and declare a Models struct to hold MovieModel
 - NewModels func returns Models struct with initialized MovieModel struct
+- Import data package and add Models struct to application dependencies
