@@ -18,6 +18,8 @@ func (m MovieModel) Insert(movie *Movie) error {
 	`
 
 	args := []any{movie.Title, movie.Year, movie.Runtime, pq.Array(movie.Genres)}
+
+	return m.DB.QueryRow(query, args...).Scan(&movie.ID, &movie.CreatedAt, &movie.Version)
 	return nil
 }
 
