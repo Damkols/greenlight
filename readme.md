@@ -148,3 +148,4 @@
 - NewModels func returns Models struct with initialized MovieModel struct
 - Import data package and add Models struct to application dependencies
 - Use NewModels func to initialize a Models struct and pass in db connection pool
+- Define SQL query for inserting a new record in the movies table
