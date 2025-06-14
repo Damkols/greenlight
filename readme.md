@@ -157,3 +157,4 @@
 - Check if movie Id is greter than 1
 - Define sql query for retrieving the movie data
 - Declare movie struct to hold data returned from query
+- Execute query using QueryRow and scan response data into fields of the movie struct
