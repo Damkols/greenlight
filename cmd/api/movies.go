@@ -56,9 +56,14 @@ func (app *application) createMovieHandler(w http.ResponseWriter, r *http.Reques
 
 	v := validator.New()
 
-
 	if data.ValidateMovie(v, movie); !v.Valid() {
 		app.failedValidationResponse(w, r, v.Errors)
+		return
+	}
+
+	err = app.models.Movies.Insert(movie)
+	if err != nil {
+		app.serverErrorResponse(w, r, err)
 		return
 	}
 

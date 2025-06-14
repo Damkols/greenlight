@@ -151,3 +151,4 @@
 - Define SQL query for inserting a new record in the movies table
 - Args slice containing values for placeholder params form the Movie struct
 - Use QueryRow method to execute sql query on our conection pool.
+- Call Insert method on movies model
