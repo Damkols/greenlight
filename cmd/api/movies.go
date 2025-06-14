@@ -70,5 +70,10 @@ func (app *application) createMovieHandler(w http.ResponseWriter, r *http.Reques
 	headers := make(http.Header)
 	headers.Set("Location", fmt.Sprintf("/v1/movies/%d", movie.ID))
 
+	err = app.writeJson(w, http.StatusCreated, envelope{"movie": movie}, headers)
+	if err != nil {
+		app.serverErrorResponse(w, r, err)
+	}
+
 	fmt.Fprintf(w, "%+v\n", input)
 }

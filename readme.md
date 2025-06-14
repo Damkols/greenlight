@@ -153,3 +153,4 @@
 - Use QueryRow method to execute sql query on our conection pool.
 - Call Insert method on movies model
 - Set Location header for newly created resource URL
+- Write Json response with a 201 created status code
