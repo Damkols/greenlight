@@ -3,7 +3,9 @@ package data
 import(
 	"database/sql"
 	"time"
+	"errors"
 	"greenlight.damkols.net/internal/validator"
+	"github.com/lib/pq"
 )
 
 type MovieModel struct {
@@ -24,6 +26,9 @@ func (m MovieModel) Insert(movie *Movie) error {
 }
 
 func (m MovieModel) Get(id int64) (*Movie, error) {
+	if id < 1 {
+		return nil, ErrRecordNotFound
+	}
 	return nil
 }
 
