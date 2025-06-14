@@ -29,6 +29,11 @@ func (m MovieModel) Get(id int64) (*Movie, error) {
 	if id < 1 {
 		return nil, ErrRecordNotFound
 	}
+
+	query := `
+		SELECT id, created_at, title, year, runtime, genres, version FROM movies
+		WHERE id = $1
+	`
 	return nil
 }
 

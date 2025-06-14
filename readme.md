@@ -155,3 +155,4 @@
 - Set Location header for newly created resource URL
 - Write Json response with a 201 created status code\
 - Check if movie Id is greter than 1
+- Define sql query for retrieving the movie data
