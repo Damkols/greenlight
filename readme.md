@@ -152,3 +152,4 @@
 - Args slice containing values for placeholder params form the Movie struct
 - Use QueryRow method to execute sql query on our conection pool.
 - Call Insert method on movies model
+- Set Location header for newly created resource URL
