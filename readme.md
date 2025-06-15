@@ -168,3 +168,4 @@
 - Copy values of request body into appropriate field of movie record
 - Validate updated movie record
 - Pass updated movie record to Update method
+- Write updated movie record in a JSON response
