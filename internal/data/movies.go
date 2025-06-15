@@ -57,6 +57,14 @@ func (m MovieModel) Update(movie *Movie) error {
 	WHERE id = $5
 	RETURNING version
 	`
+
+	args := []any{
+		movie.Title,
+		movie.Year,
+		movie.Runtime,
+		pq.Array(movie.Genres),
+		movie.ID
+	}
 	return nil
 }
 

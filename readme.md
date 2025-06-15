@@ -149,7 +149,7 @@
 - Import data package and add Models struct to application dependencies
 - Use NewModels func to initialize a Models struct and pass in db connection pool
 - Define SQL query for inserting a new record in the movies table
-- Args slice containing values for placeholder params form the Movie struct
+- Args slice containing values for placeholder params for the Movie struct
 - Use QueryRow method to execute sql query on our conection pool.
 - Call Insert method on movies model
 - Set Location header for newly created resource URL
@@ -159,3 +159,4 @@
 - Declare movie struct to hold data returned from query
 - Execute query using QueryRow and scan response data into fields of the movie struct
 - Define sql query for updating the movie data
+- Args slice containing values for placeholder params for updating the Movie struct
