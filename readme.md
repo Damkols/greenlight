@@ -161,3 +161,4 @@
 - Define sql query for updating the movie data
 - Args slice containing values for placeholder params for updating the Movie struct
 - Use QueryRow method to execute sql query and scan the new version value into movie struct
+- Extract movie Id from URL with readIDParam helper
