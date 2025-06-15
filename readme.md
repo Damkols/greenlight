@@ -160,3 +160,4 @@
 - Execute query using QueryRow and scan response data into fields of the movie struct
 - Define sql query for updating the movie data
 - Args slice containing values for placeholder params for updating the Movie struct
+- Use QueryRow method to execute sql query and scan the new version value into movie struct

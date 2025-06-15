@@ -65,7 +65,8 @@ func (m MovieModel) Update(movie *Movie) error {
 		pq.Array(movie.Genres),
 		movie.ID
 	}
-	return nil
+
+	return m.DB.QueryRow(query, args...).Scan(&movie.Version)
 }
 
 func (m MovieModel) Delete(id int64) error {
