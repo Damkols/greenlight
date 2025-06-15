@@ -158,3 +158,4 @@
 - Define sql query for retrieving the movie data
 - Declare movie struct to hold data returned from query
 - Execute query using QueryRow and scan response data into fields of the movie struct
+- Define sql query for updating the movie data
