@@ -102,4 +102,11 @@ func (app *application) updateMovieHandler(w http.ResponseWriter, r *http.Reques
 		Runtime data.Runtime `json:"runtime"`
 		Genres []string `json:"genres"`
 	}
+
+	err := app.readJSON(w, r, &input)
+	if err != nil {
+		app.badRequestResponse(w, r, err)
+		return
+	}
+
 }

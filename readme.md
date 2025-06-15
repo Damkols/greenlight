@@ -164,3 +164,4 @@
 - Extract movie Id from URL with readIDParam helper
 - Fetch existing movie record from database and send a 404 not found if we cant find a matching record
 - Declare input struct to hold expected data from client
+- Read JSON request body into input struct
