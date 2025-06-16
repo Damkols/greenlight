@@ -172,3 +172,4 @@
 - Delete movie handler function
 - Return record not found error if Movie ID is less than 1
 - Define sql query for deleting a movie data
+- Execute sql Query using Exec() method
