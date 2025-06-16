@@ -70,6 +70,9 @@ func (m MovieModel) Update(movie *Movie) error {
 }
 
 func (m MovieModel) Delete(id int64) error {
+	if id < 1 {
+		return ErrRecordNotFound
+	}
 	return nil
 }
 

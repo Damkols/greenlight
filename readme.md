@@ -170,3 +170,4 @@
 - Pass updated movie record to Update method
 - Write updated movie record in a JSON response
 - Delete movie handler function
+- Return record not found error if Movie ID is less than 1
