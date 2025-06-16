@@ -133,3 +133,7 @@ func (app *application) updateMovieHandler(w http.ResponseWriter, r *http.Reques
 	}
 
 }
+
+funct (app *application) deleteMovieHandler(w http.ResponseWriter, r *http.Request) {
+	
+}
