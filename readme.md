@@ -174,3 +174,4 @@
 - Define sql query for deleting a movie data
 - Execute sql Query using Exec() method
 - Use RowsAffected methid to get numbers of rows affected by the query
+- Check if rowsaffected is equal to zero

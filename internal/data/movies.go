@@ -88,6 +88,11 @@ func (m MovieModel) Delete(id int64) error {
 	if err != nil {
 		return err
 	}
+
+	if rowsAffected == 0 {
+		return ErrRecordNotFound
+	}
+	
 	return nil
 }
 
