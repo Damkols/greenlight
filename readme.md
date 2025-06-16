@@ -171,3 +171,4 @@
 - Write updated movie record in a JSON response
 - Delete movie handler function
 - Return record not found error if Movie ID is less than 1
+- Define sql query for deleting a movie data
