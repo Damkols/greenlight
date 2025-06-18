@@ -140,4 +140,16 @@ funct (app *application) deleteMovieHandler(w http.ResponseWriter, r *http.Reque
 		app.notFoundResponse(w,r)
 		return
 	}
+
+	err = app.models.Movies.Delete(id)
+
+	if err != nil {
+		switch {
+		case errors.Is(err, data.ErrRecordNotFound):
+			app.notFoundResponse(w,r)
+		default: 
+		app.serverErrorResponse(w, r, err)
+		}
+		return
+	}
 }
