@@ -135,5 +135,9 @@ func (app *application) updateMovieHandler(w http.ResponseWriter, r *http.Reques
 }
 
 funct (app *application) deleteMovieHandler(w http.ResponseWriter, r *http.Request) {
-	
+	id, err := app.readIDParam(r)
+	if err != nil  {
+		app.notFoundResponse(w,r)
+		return
+	}
 }

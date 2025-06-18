@@ -175,3 +175,4 @@
 - Execute sql Query using Exec() method
 - Use RowsAffected methid to get numbers of rows affected by the query
 - Check if rowsaffected is equal to zero
+- Extract movie id from URL
