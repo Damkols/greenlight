@@ -177,3 +177,4 @@
 - Check if rowsaffected is equal to zero
 - Extract movie id from URL
 - Delete movie from database, send a 404 error Not found response to client if no matching record
+- Return a 200 ok status code along with success message
